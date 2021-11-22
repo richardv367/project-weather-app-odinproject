@@ -1,0 +1,43 @@
+@mixin rounded-corners {
+	$rounded-corner-radius: 4px;
+	-webkit-border-radius: $rounded-corner-radius;
+	-moz-border-radius: $rounded-corner-radius;
+	-ms-border-radius: $rounded-corner-radius;
+	border-radius: $rounded-corner-radius;
+}
+
+/* 
+clearfix CSS hack implemented as a Sass mixin
+ampersand (&) selector is a Sass convention that means “this element.” 
+*/
+
+@mixin clearfix {
+	// For modern browsers
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	} // For IE 6/7 (trigger hasLayout)
+	& {
+		zoom: 1;
+	}
+}
+
+@mixin flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+@mixin header {
+	display: flex;
+	width: 100%;
+	height: 46px;
+}

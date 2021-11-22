@@ -1,0 +1,26 @@
+{
+  "name": "project-weather-app-odinproject",
+  "version": "1.0.0",
+  "description": "Odin Project assignment for a Weather App using promises and Async/Await",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardv367/project-weather-app-odinproject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richardv367/project-weather-app-odinproject/issues"
+  },
+  "homepage": "https://github.com/richardv367/project-weather-app-odinproject#readme",
+  "devDependencies": {
+    "css-loader": "^6.4.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0"
+  }
+}

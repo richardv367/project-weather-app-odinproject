@@ -1,0 +1,16 @@
+/*
+font-family: 'Gowun Dodum', sans-serif;
+font-family: 'MonteCarlo', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Style Script', cursive;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=MonteCarlo&family=Montserrat:wght@100;300;400&family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;500&family=Roboto+Slab:wght@100;300;400&family=Roboto:wght@300;500;700&family=Style+Script&display=swap");
+
+$sans-serif-font: Roboto, "Open Sans", Montserrat, "Gowun Dodum", Helvetica,
+	sans-serif;
+
+$serif-font: "Roboto Slab", "Playfair Display", Georgia, Times, serif;

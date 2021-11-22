@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OdinProject Weather App</title>
+  <link rel="stylesheet" href="../src/styles/style.css">
+</head>
+<body>
+  <div id="content" class="container-fluid">
+    <header id="header">
+      <div id="search-container" class="col-4">
+        <input class="col-11" type="text" placeholder="Location...">
+        <div id="search-icon">
+          <svg
+            focusable="false"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#9aa0a6"
+          >
+            <path
+              d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </header>
+    <div class="weather-master">
+      <div class="weather-master-left">
+        <div class="current-weather-container-card">
+          <div class="current-weather-info">
+            <span class="current-date">Friday 15<sup>th</sup> October 2021</span>
+            <span class="current-time">10:00am</span>
+            <span class="current-weather-description">mostly sunny</span>
+            <span class="current-weather-location">Bristol, UK</span>
+            <span class="current-weather-temp">69&#176;F</span>
+          </div>
+          <div class="current-weather-icon">
+            <canvas class="icon" width="160" height="160"></canvas>
+          </div>
+        </div>
+        <div class="multiday-container">
+          <div class="day-card">
+            <span class="multiday-day">mon</span>
+            <span class="multiday-temp">69&#176;F</span>
+            <span class="multiday-night-temp">69&#176;F</span>
+          </div>
+          <div class="day-card">
+            <span class="multiday-day">tue</span>
+            <span class="multiday-temp">69&#176;F</span>
+            <span class="multiday-night-temp">69&#176;F</span>
+          </div>
+          <div class="day-card">
+            <span class="multiday-day">wed</span>
+            <span class="multiday-temp">69&#176;F</span>
+            <span class="multiday-night-temp">69&#176;F</span>
+          </div>
+          <div class="day-card">
+            <span class="multiday-day">thur</span>
+            <span class="multiday-temp">69&#176;F</span>
+            <span class="multiday-night-temp">69&#176;F</span>
+          </div>
+          <div class="day-card">
+            <span class="multiday-day">fri</span>
+            <span class="multiday-temp">69&#176;F</span>
+            <span class="multiday-night-temp">69&#176;F</span>
+          </div>
+        </div>          
+      </div>
+      <div class="current-weather-sidebar">
+        <div class="sidebar-card">
+          <img src="../src/styles/icons/thermometer.svg" alt="" class="sidebar-card-icon">
+          <div class="sidebar-card-info">
+            <span class="sidebar-card-info-1">feels like</span>
+            <span class="sidebar-card-info-2">47&#176;F</span>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <img src="../src/styles/icons/humidity.svg" alt="" class="sidebar-card-icon">
+          <div class="sidebar-card-info">
+            <span class="sidebar-card-info-1">humidity</span>
+            <span class="sidebar-card-info-2">69%</span>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <img src="../src/styles/icons/rain-2.svg" alt="" class="sidebar-card-icon">
+          <div class="sidebar-card-info">
+            <span class="sidebar-card-info-1">precipitation</span>
+            <span class="sidebar-card-info-2">69%</span>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <img src="../src/styles/icons/wind.svg" alt="" class="sidebar-card-icon">
+          <div class="sidebar-card-info">
+            <span class="sidebar-card-info-1">wind speed</span>
+            <span class="sidebar-card-info-2">69 km/h</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <script src="../src/skycons.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+// * {
+// 	box-sizing: border-box;
+// 	padding: 0;
+// 	margin: 0;
+// }
+
+@import "fonts";
+@import "colours";
+@import "mixins";
+@import "grid-framework";
+
+.container {
+	max-width: 95%;
+	margin: 0 auto;
+}
+.container-fluid {
+	max-width: 100%;
+}
+
+$breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+);
+$col-margin: 7px;
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	// height: 40px;
+	margin: 10px 0px;
+	width: 100%;
+	// background: $tertiary-colour;
+}
+div[class^="col-"] {
+	// flex: 1;
+	width: 80%;
+	max-width: 100%;
+	margin: 0 $col-margin;
+	// background: $tertiary-colour;
+	// border: 1px solid rgb(2, 102, 2);
+	padding: 1rem 0;
+	text-align: center;
+	@include rounded-corners;
+}
+
+@function calcwidth($n) {
+	@return calc((#{$n} / 12 * 100%) - (2 * #{$col-margin}));
+}
+
+@for $i from 1 through 12 {
+	.col-#{$i} {
+		width: calcwidth($i) !important;
+	}
+}
+
+@each $size, $value in $breakpoints {
+	@media (min-width: $value) {
+		@for $i from 1 through 12 {
+			.col-#{$size}-#{$i} {
+				// float: left;
+				// flex: $i !important;
+				// flex: 0 0 (100% / 16 * $i) !important;
+				width: calcwidth($i) !important;
+				// margin: 0 $col-margin;
+			}
+		}
+	}
+}
